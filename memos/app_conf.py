@@ -1,7 +1,10 @@
 import sys
+import os
 import configparser
 
-CONF_PATH = "../conf/app.conf"
+sys.path.append(os.path.join(os.path.dirname(__file__),".."))
+
+CONF_PATH = "conf/app.conf"
 config_ini = configparser.ConfigParser()
 config_ini.read(CONF_PATH, encoding="utf-8")
 

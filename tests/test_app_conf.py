@@ -6,11 +6,11 @@ import unittest
 import pytest
 import configparser
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '../memos/'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-import app_conf
+from memos import app_conf
 
-CONF_PATH = "../conf/app.conf"
+CONF_PATH = "conf/app.conf"
 config_ini = configparser.ConfigParser()
 config_ini.read(CONF_PATH, encoding="utf-8")
 
